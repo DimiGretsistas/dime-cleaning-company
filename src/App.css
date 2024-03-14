@@ -4,7 +4,7 @@
   cursor: pointer;
 }
 .navbar {
-  height: 13vh;
+  height: 12vh;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -126,6 +126,7 @@
 .services-description-text {
   font-size: 1rem;
   margin-bottom: 65px;
+  padding: 30px;
 }
 
 .services-container {
@@ -174,4 +175,46 @@
 
 .service-card-back {
   transform: rotateY(180deg);
+}
+
+/* Service Section End */
+
+/* About Section Start */
+.about-heading {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: #5b05ee;
+  background-color: white;
+}
+.about-container {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+      background-color: white;
+
+}
+
+.about-image {
+    width: 50%;
+    margin-top: 100px;
+}
+
+.about-text {
+    width: 49%; 
+    margin-top: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: black;
+}
+.about-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-header-two{
+  border-bottom: 5px solid #5b05ee;
 }
