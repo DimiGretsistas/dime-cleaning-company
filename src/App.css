@@ -190,11 +190,9 @@
 }
 .about-container {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
       background-color: white;
-
 }
 
 .about-image {
@@ -208,6 +206,7 @@
     padding-left: 30px;
     padding-right: 30px;
     color: black;
+    
 }
 .about-all {
   display: flex;
@@ -218,3 +217,47 @@
 .about-header-two{
   border-bottom: 5px solid #5b05ee;
 }
+/* About Section End */
+
+/* FAQ Section Start */
+.general-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.faq-header {
+  margin-top: 50px; /* Just for spacing */
+}
+
+.faq-content {
+  display: flex;
+  align-items: center; /* Align items to the top */
+  
+}
+
+.faq-image{
+ max-width: 65vw;
+ position: relative;
+  left: -20px;
+}
+
+
+
+/* Add your additional CSS styles as needed */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

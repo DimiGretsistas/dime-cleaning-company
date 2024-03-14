@@ -20,9 +20,9 @@ export default function Navbar() {
                 <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
                  <li><Link to="/Services" onClick={toggleMenu}>Services</Link></li>
                  <li><Link to="/About" onClick={toggleMenu}>About</Link></li>
-                {/* <li><Link to="/Faq" onClick={toggleMenu}>FAQ</Link></li>
+                <li><Link to="/Faq" onClick={toggleMenu}>FAQ</Link></li>
                 <li><Link to="/Contact" onClick={toggleMenu}>Contact</Link></li>
-                <li><Link to="/Impressum" onClick={toggleMenu}>Impressum </Link></li>  */}
+                {/* <li><Link to="/Impressum" onClick={toggleMenu}>Impressum </Link></li>  */}
             </ul>
         </nav>
     );
