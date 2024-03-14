@@ -228,12 +228,12 @@
 }
 
 .faq-header {
-  margin-top: 50px; /* Just for spacing */
+  margin-top: 50px; 
 }
 
 .faq-content {
   display: flex;
-  align-items: center; /* Align items to the top */
+  align-items: center; 
   
 }
 
@@ -245,7 +245,6 @@
 
 
 
-/* Add your additional CSS styles as needed */
 
 
 
