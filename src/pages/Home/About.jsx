@@ -4,7 +4,7 @@ import AboutImage from '../../Images/eco-products.png'
 export default function About() {
     return (
         <div>
-            <h2 className="about-heading">Über uns</h2>
+            <h1 className="about-heading">Über uns</h1>
             <div className="about-container">
                 <div className="about-text">
                     <h2 className="about-header-two">Umweltfreundliche Reinigungslösungen</h2>

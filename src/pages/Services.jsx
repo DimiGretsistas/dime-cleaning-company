@@ -31,10 +31,11 @@ export default function Services() {
                 <h1 className="services-heading">Unsere Dienstleistungen</h1>
                 <p className="services-description-text">
                     Wir bieten eine Vielzahl von Dienstleistungen an, um Ihre Räumlichkeiten in bestem Zustand zu halten.
-                    <br />
+                    
                     Unser Serviceangebot umfasst unter anderem die Baureinigung, Glasreinigung, Büroreinigung und Lagerhallenreinigung.
-                    <br />
+                    
                     Doch das ist noch nicht alles. Unsere Experten stehen bereit, um Ihre spezifischen Anforderungen zu erfüllen und maßgeschneiderte Lösungen anzubieten, die genau auf Ihre Bedürfnisse zugeschnitten sind.
+                    
                     <br />
                     <br />
                     Um mehr über jeden unserer Dienstleistungen zu erfahren, müssen Sie einfach mit der Maus über die entsprechenden Karten schweben. Dort finden Sie detaillierte Informationen zu den angebotenen Leistungen, damit Sie die beste Entscheidung für Ihre Reinigungsbedürfnisse treffen können.

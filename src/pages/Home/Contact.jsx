@@ -1,95 +1,72 @@
-export default function Contact() {
-    return <section id="ContactUs" className="contact--section ">
-        <div>
-            <h2>Contact Us</h2>
-            <p className="text-lg">
-                Please leave us a message with your inquiry
-            </p>
+import React, { useState } from 'react';
+
+const Contact = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prevState => ({
+            ...prevState,
+            [name]: value
+        }));
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Here you can handle form submission, for example, send the data to a backend server
+        console.log('Form submitted with data:', formData);
+        // Clear the form fields after submission
+        setFormData({
+            name: '',
+            email: '',
+            message: ''
+        });
+    };
+
+    return (
+        <div className='contact-container'>
+            <h1>Contact Us</h1>
+            <form onSubmit={handleSubmit}>
+                <div className='form-group'>
+                    <label htmlFor='name'>Name:</label>
+                    <input
+                        type='text'
+                        id='name'
+                        name='name'
+                        value={formData.name}
+                        onChange={handleChange}
+                        required
+                    />
+                </div>
+                <div className='form-group'>
+                    <label htmlFor='email'>Email:</label>
+                    <input
+                        type='email'
+                        id='email'
+                        name='email'
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                    />
+                </div>
+                <div className='form-group'>
+                    <label htmlFor='message'>Message:</label>
+                    <textarea
+                        id='message'
+                        name='message'
+                        value={formData.message}
+                        onChange={handleChange}
+                        required
+                    />
+                </div>
+                <button type='submit'>Submit</button>
+            </form>
         </div>
-        <form className="contact--form--container">
-            <div className="container">
-                <label htmlFor="first-name" className="contact--label">
-                    <span className="text-md"> First Name </span>
-                    <input
-                        type="text"
-                        className="contact--input text-md"
-                        name="first-name"
-                        id="first-name"
-                        required
-                    />
-                </label>
-                <label htmlFor="last-name" className="contact--label">
-                    <span className="text-md"> Last Name </span>
-                    <input
-                        type="text"
-                        className="contact--input text-md"
-                        name="last-name"
-                        id="last-name"
-                        required
-                    />
-                </label>
-                <label htmlFor="email" className="contact--label">
-                    <span className="text-md"> Email </span>
-                    <input
-                        type="email"
-                        className="contact--input text-md"
-                        name="email"
-                        id="email"
-                        required
-                    />
-                </label>
-                <label htmlFor="phone-number" className="contact--label">
-                    <span className="text-md"> Phone Number </span>
-                    <input
-                        type="number"
-                        className="contact--input text-md"
-                        name="phone-number"
-                        id="phone-number"
-                    />
-                </label>
-            </div>
-            <label htmlFor="choose-service" className="contact--label">
-                <span className="text-md">Type of cleaning</span>
-                <select id="choose--type" className="contact--input text-md">
-                    <option>Choose one..</option>
-                    <option>Office</option>
-                    <option>Construction building</option>
-                    <option>Storage room</option>
-                    <option>Glass</option>
-                </select>
-            </label>
-            <label htmlFor="last-name" className="contact--label">
-                <span className="text-md"> Building adress</span>
-                <input
-                    type="text"
-                    className="contact--input text-md"
-                    name="last-name"
-                    id="last-name"
-                    required
-                />
-            </label>
-            <label htmlFor="last-name" className="contact--label">
-                <span className="text-md"> PLZ & City </span>
-                <input
-                    type="text"
-                    className="contact--input text-md"
-                    name="last-name"
-                    id="last-name"
-                    required
-                />
-            </label>
-            <label htmlFor="message" className="contact--label">
-                <span className="text-md">Message</span>
-                <textarea
-                    className="contact--input text-md"
-                    id="message"
-                    rows="8"
-                    placeholder="Type your message..."
-                />
-            </label>
-            <div>
-                <button className="btn btn-primary contact--form--btn">Submit</button>
-            </div>
-        </form>
-    </section >
+    );
 }
+
+export default Contact;

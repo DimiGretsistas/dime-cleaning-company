@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import faqImage from '../Images/faq-image.png' // Importieren Sie das Bild aus Ihrem Dateiverzeichnis
+import faqImage from '../Images/faq-image.png'; // Import the image from your file directory
 
 const Faq = () => {
-    // Array von Fragen und Antworten
+    // Array of questions and answers
     const faqs = [
         {
             question: 'Verwendet Ihre Reinigungsfirma ausschließlich Bio-Produkte?',
@@ -33,13 +33,13 @@ const Faq = () => {
     };
 
     return (
-        <div className='general-container'>
+        <div className='faq-container'>
             <h1 className='faq-header'>FAQs</h1>
-            <div className='faq-image-container'>
-                <img src={faqImage} alt='FAQ Bild' className='faq-image' />
-            </div>
-            <div className='faq-content'>
-                <div className='faq-container'>
+            <div className='general-container'>
+                <div className='faq-image-container'>
+                    <img src={faqImage} alt='FAQ Bild' className='faq-image' />
+                </div>
+                <div className='faq-content'>
                     <div className='faq-questions'>
                         {faqs.map((faq, index) => (
                             <div key={index} className={`faq-item ${index === openIndex ? 'active' : ''}`}>
